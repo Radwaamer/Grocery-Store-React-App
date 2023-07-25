@@ -1,0 +1,20 @@
+// abstracts
+@import './utilities/variables';
+@import './utilities/mixins';
+
+// base
+@import './base/reset';
+@import './base/typography';
+
+// layout
+@import './layout/header';
+@import './layout/footer';
+
+// components
+@import './components/buttons';
+@import './components/title';
+@import './components/our-section';
+
+// pages
+@import './pages/home';
+@import './pages/shop';

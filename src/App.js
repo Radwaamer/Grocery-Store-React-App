@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+import './assets/styles/main.css';
+import '../node_modules/@fortawesome/fontawesome-free/js/fontawesome.min';
+
+import Header from './layouts/header/Header';
+import Footer from './layouts/footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Footer />
     </div>
   );
 }
