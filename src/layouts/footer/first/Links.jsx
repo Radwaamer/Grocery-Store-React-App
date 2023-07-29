@@ -1,18 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-const Link = (props) => {
+const Links = (props) => {
     const link=props.link[Object.keys(props.link)[0]].map((l,index)=>{
         return(
         <li key={index}>
             {props.index!=2 ?
-            <a href="#">
+            <Link to={"/"}>
                 <i className="fa-solid fa-arrow-right"></i>
                 <p>{l}</p>
-            </a>: 
-            <a href="#">
+            </Link>: 
+            <Link to={"/"}>
                 {l[Object.keys(l)[0]]}
                 <p>{Object.keys(l)[0]}</p>
-            </a>
+            </Link>
             }
         </li>
     )})
@@ -24,4 +25,4 @@ const Link = (props) => {
     )
 }
 
-export default Link
+export default Links

@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Profile = () => {
+const Profile = ({active}) => {
     return (
-        <div className="profile">
+        <div className={active? "profile active" : "profile"}>
             <h4>LOGIN NOW</h4>
             <form action="">
                 <input type="email" name="email" id="user-email" placeholder="enter your email" />
@@ -11,8 +12,8 @@ const Profile = () => {
                 <label htmlFor="remember">Remember Me</label>
                 <button type="submit" className="main-btn">Login Now</button>
             </form>
-            <p>Forget Password? <a href="">Click Here</a></p>
-            <p>Don't Have An Account? <a href="">Create One</a></p>
+            <p>Forget Password? <Link to={"/"}>Click Here</Link></p>
+            <p>Don't Have An Account? <Link to={"/"}>Create One</Link></p>
         </div>
     )
 }

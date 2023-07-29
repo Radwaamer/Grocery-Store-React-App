@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from './Logo';
 import Menu from './Menu';
 import Icons from './Icons';
@@ -7,34 +7,26 @@ import Shopping from './shopping/Shopping';
 import Profile from './Profile';
 
 const Header = () => {
-
-    // handle icons
-    function toggleIcons(icon){
-        // document.querySelector(`header ${icon}`).classList.toggle("active");
-    }
+    const [menu,setMenu]=useState(false);
+    const [search,setSearch]=useState(false);
+    const [cart,setCart]=useState(false);
+    const [profile,setProfile]=useState(false);
 
     function showMenu(){
-        // toggleIcons(".menu");
+        setMenu(!menu)
     };
 
     function searchForm(){
-        // toggleIcons(".search-form");
+        setSearch(!search)
     };
 
     function shoppingCart(){
-        // toggleIcons(".shopping");
+        setCart(!cart)
     };
 
     function profileLogin(){
-        // toggleIcons(".profile");
+        setProfile(!profile)
     };
-
-    // handle active link
-    // document.querySelectorAll("header .menu li a").forEach((a)=>{
-    //     if(a.href.includes(window.location.pathname)){
-    //         a.classList.add("active");
-    //     }
-    // })
 
     return (
         <header>
@@ -42,15 +34,16 @@ const Header = () => {
 
                 <Logo />
         
-                <Menu />
+                <Menu active={menu}/>
         
-                <Icons showMenu={showMenu} searchForm={searchForm} shoppingCart={shoppingCart} profileLogin={profileLogin} />
+                <Icons showMenu={showMenu} searchForm={searchForm} 
+                shoppingCart={shoppingCart} profileLogin={profileLogin} />
 
-                <Search />
+                <Search active={search}/>
 
-                <Shopping />
+                <Shopping active={cart}/>
 
-                <Profile />
+                <Profile active={profile}/>
 
             </div>
         </header>

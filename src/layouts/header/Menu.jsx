@@ -1,14 +1,15 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Menu = () => {
+const Menu = ({active}) => {
   return (
-    <ul className="menu">
-        <li><a href="../home/home.html">Home</a></li>
-        <li><a href="../shop/shop.html">Shop</a></li>
-        <li><a href="../about/about.html">About</a></li>
-        <li><a href="../review/review.html">Review</a></li>
-        <li><a href="../blog/blog.html">Blog</a></li>
-        <li><a href="../contact/contact.html">Contact</a></li>
+    <ul className={active? "menu active" : "menu"}>
+        <li><NavLink to={"/home"}>Home</NavLink></li>
+        <li><NavLink to={"/shop"}>Shop</NavLink></li>
+        <li><NavLink to={"/about"}>About</NavLink></li>
+        <li><NavLink to={"/review"}>Review</NavLink></li>
+        <li><NavLink to={"/blog"}>Blog</NavLink></li>
+        <li><NavLink to={"/contact"}>Contact</NavLink></li>
     </ul>
   )
 }

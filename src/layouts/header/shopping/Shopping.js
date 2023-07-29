@@ -2,9 +2,9 @@ import React from 'react'
 import Items from './Items'
 import Total from './Total'
 
-const Shopping = () => {
+const Shopping = ({active}) => {
     return (
-        <div className="shopping">
+        <div className={active? "shopping active" : "shopping"}>
             <Items />
             <Total />
         </div>

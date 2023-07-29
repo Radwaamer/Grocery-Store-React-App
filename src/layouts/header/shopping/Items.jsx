@@ -3,11 +3,11 @@ import Item from './Item';
 
 const Items = () => {
   return (
-    <>
-    <Item />
-    <Item />
-    <Item />
-    </>
+    <div className="items">
+      <Item />
+      <Item />
+      <Item />
+    </div>
   )
 }
 
