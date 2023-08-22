@@ -1,21 +1,19 @@
 import React from 'react'
 import Title from '../../components/title/Title'
-import OurSection from '../../components/our-section/OurSection'
 import Categories from './categories/Categories'
+import Products from './products/Products';
 
 const Shop = () => {
 
     return (
         <section className="shop">
-        <Title />
+            <Title title={"Shop Now"} />
 
-        <Categories />
+            <Categories />
 
-        <div className="products">
-            <OurSection section={"products"}/>
-        </div>
+            <Products />
 
-    </section>
+        </section>
     )
 }
 
