@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/Grocery-Store-React-app/static/css/main.ff462fe0.css",
+    "main.js": "/Grocery-Store-React-app/static/js/main.1040101d.js",
+    "static/media/veg.png": "/Grocery-Store-React-app/static/media/veg.26322dda42d96dd67d46.png",
+    "static/media/fa-solid-900.ttf": "/Grocery-Store-React-app/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/testing milk.jpg": "/Grocery-Store-React-app/static/media/testing milk.0e2a896e5c3dfe3a138c.jpg",
+    "static/media/fa-brands-400.ttf": "/Grocery-Store-React-app/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/Grocery-Store-React-app/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/kiwi.jpg": "/Grocery-Store-React-app/static/media/kiwi.e2caf62285ecf0e51818.jpg",
+    "static/media/fa-brands-400.woff2": "/Grocery-Store-React-app/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/MasterCard.svg.webp": "/Grocery-Store-React-app/static/media/MasterCard.svg.cbdfb6078b7efff912d4.webp",
+    "static/media/wheat.jpg": "/Grocery-Store-React-app/static/media/wheat.79e6293cf015c443cea6.jpg",
+    "static/media/fruits.jpg": "/Grocery-Store-React-app/static/media/fruits.24e59c84c40e7150141f.jpg",
+    "static/media/spices.jpg": "/Grocery-Store-React-app/static/media/spices.0e7428a2d95dac830c5b.jpg",
+    "static/media/vegetables.jpg": "/Grocery-Store-React-app/static/media/vegetables.9f404d45bccd995fcffc.jpg",
+    "static/media/meat.jpg": "/Grocery-Store-React-app/static/media/meat.7fe97423b12b0095ff99.jpg",
+    "static/media/veg.jpg": "/Grocery-Store-React-app/static/media/veg.e77f0b89a007e7dc1b39.jpg",
+    "static/media/pepper 1.jpg": "/Grocery-Store-React-app/static/media/pepper 1.7b978923f4ac9e70983a.jpg",
+    "static/media/PayPal.svg.png": "/Grocery-Store-React-app/static/media/PayPal.svg.088671dded675d04af8f.png",
+    "static/media/fa-regular-400.ttf": "/Grocery-Store-React-app/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/couple holding basket.avif": "/Grocery-Store-React-app/static/media/couple holding basket.c6f4d6c78f30cb05ac0e.avif",
+    "static/media/holding basket.jpg": "/Grocery-Store-React-app/static/media/holding basket.dd24ba872615599932d4.jpg",
+    "static/media/title.avif": "/Grocery-Store-React-app/static/media/title.4521fa18b25a83fcc6af.avif",
+    "static/media/bananas.jpg": "/Grocery-Store-React-app/static/media/bananas.cd9f6d9eb0454b1bcaf5.jpg",
+    "static/media/pepper.jpg": "/Grocery-Store-React-app/static/media/pepper.65f1485d5c6e9d873ed4.jpg",
+    "static/media/Visa.svg.png": "/Grocery-Store-React-app/static/media/Visa.svg.40888662d2612811afe4.png",
+    "static/media/pineapple.jpg": "/Grocery-Store-React-app/static/media/pineapple.9a0d9a033ec46f42329e.jpg",
+    "static/media/fa-regular-400.woff2": "/Grocery-Store-React-app/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/fa-v4compatibility.ttf": "/Grocery-Store-React-app/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Grocery-Store-React-app/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "index.html": "/Grocery-Store-React-app/index.html",
+    "main.ff462fe0.css.map": "/Grocery-Store-React-app/static/css/main.ff462fe0.css.map",
+    "main.1040101d.js.map": "/Grocery-Store-React-app/static/js/main.1040101d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff462fe0.css",
+    "static/js/main.1040101d.js"
+  ]
+}
