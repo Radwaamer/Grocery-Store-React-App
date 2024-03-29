@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Categories = () => {
     return (
@@ -10,7 +11,7 @@ const Categories = () => {
                         <div key={cat} className="cat">
                             <p>Limited Sales</p>
                             <h4>Upto 75% Off</h4>
-                            <button className="main-btn">Shop Now</button>
+                            <Link to={"/shop"}><button className="main-btn">Shop Now</button></Link>
                         </div>
                     )
                 })}

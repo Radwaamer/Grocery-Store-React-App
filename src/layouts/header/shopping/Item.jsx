@@ -1,15 +1,16 @@
-import React from 'react'
-import Banner from '../../../assets/images/home banner/pepper 1.jpg';
+import React, { useContext } from 'react'
+import ShoppingContext from './../../../context/ShoppingContext';
 
-const Item = () => {
+const Item = ({pro}) => {
+    const {card,setCard}= useContext(ShoppingContext);
     return (
         <div className="item">
-            <img src={Banner} alt="Banner" />
+            <img src={require(`../../../assets/images/products pro/${pro.img}`)} alt={pro.title} />
             <div className="text">
-                <h5>Organic Food</h5>
-                <p>1 X $18.99</p>
+                <h5>{pro.title}</h5>
+                <p>1 X {pro.price}</p>
             </div>
-            <p>x</p>
+            <p onClick={()=>setCard(card.filter(product=>pro.id!=product.id))}>x</p>
         </div>
     )
 }

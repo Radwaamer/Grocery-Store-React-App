@@ -1,5 +1,4 @@
 .shop{
-    margin-bottom: 1.5rem;
 
     .cats{
         margin: 3rem 0 5rem;
@@ -75,10 +74,10 @@
                             padding: 0.6rem;
                             font-size: $meduim-font;
                             transition: color $transition, background-color $transition;
-                        }
-                        i:hover{
-                            color: $white;
-                            background-color: $green;
+                            &:hover,&.active{
+                                color: $white;
+                                background-color: $green;
+                            }
                         }
                     }
                 }

@@ -1,0 +1,53 @@
+%box{
+    @include flex();
+    gap: 0.7rem;
+    img{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+    }
+    .text{
+        p{
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        span{
+            font-size: $small-font;
+            color: $light-grey;
+        }
+    }
+}
+
+
+.review{
+    
+    .services{
+        .container{
+            @include grid(3);
+            .service{
+                @extend %box;
+            }
+        }
+    }
+
+    .clients{
+        margin-top: 5rem;
+        .container{
+            @include grid(3);
+            .client{
+                border: #ddd solid 1px;
+                padding: 1rem;
+                .id{
+                    @extend %box;
+                }
+                .descreption{
+                    color: $dark-grey;
+                    margin-top: 1rem;
+                    font-size: $meduim-font;
+                    line-height: 1.7;
+                }
+            }
+        }
+    }
+
+}

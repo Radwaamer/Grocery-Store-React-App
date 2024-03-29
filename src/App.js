@@ -8,20 +8,25 @@ import Home from './pages/home/Home';
 import Shop from './pages/shop/Shop';
 import About from './pages/about/About';
 import Review from './pages/review/Review';
+import ShoppingContext from './context/ShoppingContext';
+import { useState } from 'react';
 
 function App() {
+  const [card,setCard]=useState([]);
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="Home" element={<Home />} />
-          <Route path="Shop" element={<Shop />} />
-          <Route path="About" element={<About />} />
-          <Route path="Review" element={<Review />} />
-        </Route>
-      </Routes>
-    </>
+    <ShoppingContext.Provider value={{card,setCard}}>
+      <>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="Home" element={<Home />} />
+            <Route path="Shop" element={<Shop />} />
+            <Route path="About" element={<About />} />
+            <Route path="Review" element={<Review />} />
+          </Route>
+        </Routes>
+      </>
+    </ShoppingContext.Provider>
   );
 }
 

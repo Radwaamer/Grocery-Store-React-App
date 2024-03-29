@@ -57,6 +57,7 @@ button {
 
 .home, .shop, .about, .review, .blog, .contact {
   margin-top: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 header {
@@ -204,6 +205,17 @@ header .container .shopping, header .container .profile {
 header .container .shopping.active, header .container .profile.active {
   visibility: visible;
   right: 0.7rem;
+}
+header .container .shopping {
+  min-width: 17rem;
+}
+header .container .shopping .no-items {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+header .container .shopping .no-items p {
+  padding-bottom: 1rem;
 }
 header .container .shopping .items .item {
   display: flex;
@@ -413,6 +425,9 @@ button.main-btn:hover {
     transform: scale(1);
   }
 }
+.home {
+  margin-bottom: 0;
+}
 .home .banner {
   width: 100%;
   min-height: 25rem;
@@ -528,9 +543,6 @@ button.main-btn:hover {
   font-size: 0.8rem;
 }
 
-.shop {
-  margin-bottom: 1.5rem;
-}
 .shop .cats {
   margin: 3rem 0 5rem;
 }
@@ -613,7 +625,7 @@ button.main-btn:hover {
   font-size: 0.9rem;
   transition: color 0.3s, background-color 0.3s;
 }
-.shop .prods .container .pro .overlay .options i:hover {
+.shop .prods .container .pro .overlay .options i:hover, .shop .prods .container .pro .overlay .options i.active {
   color: #FDFEFD;
   background-color: #B8B145;
 }
@@ -622,9 +634,6 @@ button.main-btn:hover {
   height: 75%;
 }
 
-.about {
-  margin-bottom: 1.5rem;
-}
 .about .our-shop {
   margin-bottom: 5rem;
 }
@@ -691,4 +700,47 @@ button.main-btn:hover {
 }
 .about .gallery .our-gallery .container .box:hover i {
   display: block;
+}
+
+.review .clients .container .client .id, .review .services .container .service {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.review .clients .container .client .id img, .review .services .container .service img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.review .clients .container .client .id .text p, .review .services .container .service .text p {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.review .clients .container .client .id .text span, .review .services .container .service .text span {
+  font-size: 0.8rem;
+  color: #8C816F;
+}
+
+.review .services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.review .clients {
+  margin-top: 5rem;
+}
+.review .clients .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.review .clients .container .client {
+  border: #ddd solid 1px;
+  padding: 1rem;
+}
+.review .clients .container .client .descreption {
+  color: #626362;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
 }/*# sourceMappingURL=main.css.map */

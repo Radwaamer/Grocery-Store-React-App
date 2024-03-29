@@ -5,6 +5,7 @@ import pineapple from '../../../assets/images/home banner/pineapple.jpg'
 import { Navigation} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Link } from 'react-router-dom';
 
 const Content = () => {
     const content=[veg,pepper,pineapple].map((img,index)=>{
@@ -16,7 +17,7 @@ const Content = () => {
                         <div className="text">
                             <p>Fresh And Organic</p>
                             <h2>Upto 50% Off</h2>
-                            <button className="main-btn">Shop Now</button>
+                            <Link to={"/shop"}><button className="main-btn">Shop Now</button></Link>
                         </div>
 
                         <div className="image">

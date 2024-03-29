@@ -41,7 +41,7 @@ const Header = () => {
 
                 <Search active={search}/>
 
-                <Shopping active={cart}/>
+                <Shopping active={cart} setActive={setCart}/>
 
                 <Profile active={profile}/>
 
